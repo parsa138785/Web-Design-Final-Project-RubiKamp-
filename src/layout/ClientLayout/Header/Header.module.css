@@ -1,0 +1,163 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.lightTheme {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+.darkTheme {
+    background-color: #2d3748; /* A dark gray */
+    color: #e2e8f0; /* A light gray for text */
+}
+
+.logoContainer {
+    /* Styles for logo container */
+}
+
+.logoLink {
+    text-decoration: none;
+}
+
+.lightTheme .logoLink {
+    color: #333333;
+}
+
+.darkTheme .logoLink {
+    color: #e2e8f0;
+}
+
+.logoText {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.navLinks {
+    display: flex;
+    gap: 20px;
+}
+
+.navLink {
+    text-decoration: none;
+    font-size: 1em;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.lightTheme .navLink {
+    color: #333333;
+}
+
+.darkTheme .navLink {
+    color: #e2e8f0;
+}
+
+.lightTheme .navLink:hover {
+    background-color: #f0f0f0;
+}
+
+.darkTheme .navLink:hover {
+    background-color: #4a5568; /* Slightly lighter dark gray */
+}
+
+.userSection {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.themeToggle {
+    background: none;
+    border: 1px solid;
+    padding: 8px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+.lightTheme .themeToggle {
+    border-color: #333333;
+    color: #333333;
+}
+
+.darkTheme .themeToggle {
+    border-color: #e2e8f0;
+    color: #e2e8f0;
+}
+
+.profileLink {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+}
+
+.lightTheme .profileLink {
+    color: #333333;
+}
+
+.darkTheme .profileLink {
+    color: #e2e8f0;
+}
+
+.avatar {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid;
+}
+
+.lightTheme .avatar {
+    border-color: #cccccc;
+}
+
+.darkTheme .avatar {
+    border-color: #718096; /* Medium gray */
+}
+
+.avatarPlaceholder {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.lightTheme .avatarPlaceholder {
+    background-color: #e0e0e0;
+    color: #555555;
+}
+
+.darkTheme .avatarPlaceholder {
+    background-color: #4a5568;
+    color: #e2e8f0;
+}
+
+.userName {
+    font-weight: 500;
+}
+
+.logoutButton {
+    background-color: #dc3545; /* Red for logout */
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+}
+
+.logoutButton:hover {
+    background-color: #c82333; /* Darker red */
+}

@@ -1,0 +1,138 @@
+.page {
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.lightTheme {
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+.darkTheme {
+    background-color: #343a40;
+    color: #f8f9fa;
+}
+
+.loadingLight, .errorLight {
+    color: black;
+}
+
+.loadingDark, .errorDark {
+    color: white;
+}
+
+.pageTitle {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.subTitle {
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.adminLinksContainer {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.adminLink {
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.adminLink:hover {
+    background-color: #0056b3;
+}
+
+.onboardingText {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.searchContainer {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.input, .select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+}
+
+.lightTheme .input, .lightTheme .select {
+    background-color: white;
+    color: black;
+}
+
+.darkTheme .input, .darkTheme .select {
+    background-color: #495057;
+    color: white;
+    border-color: #6c757d;
+}
+
+.productGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.productLink {
+    text-decoration: none;
+    color: inherit;
+}
+
+.productCard {
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.lightTheme .productCard {
+    border: 1px solid #dee2e6;
+    background-color: white;
+}
+
+.darkTheme .productCard {
+    border: 1px solid #495057;
+    background-color: #212529;
+}
+
+.productImage {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.productName {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.productCategory {
+    font-size: 0.9rem;
+}
+
+.lightTheme .productCategory {
+    color: #6c757d;
+}
+
+.darkTheme .productCategory {
+    color: #adb5bd;
+}
+
+.noProducts {
+    text-align: center;
+    margin-top: 20px;
+}
