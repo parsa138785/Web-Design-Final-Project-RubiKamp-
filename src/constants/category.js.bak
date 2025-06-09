@@ -1,0 +1,97 @@
+export const CategoryIds = {
+    LAPTOP: 'laptop',
+    MOBILE: 'mobile',
+    CAMERA: 'camera',
+    FOOD: 'food'
+} as const;
+
+export const CategoryLabels = {
+    [CategoryIds.LAPTOP]: 'لپ تاپ',
+    [CategoryIds.MOBILE]: 'موبایل',
+    [CategoryIds.CAMERA]: 'دوربین',
+    [CategoryIds.FOOD]: 'غذا'
+} as const;
+
+export const CATEGORIES = Object.entries(CategoryIds).map(([key, id]) => ({
+    id,
+    label: CategoryLabels[id]
+}));
+
+const arrayOfProducts = [
+    {
+        id: 1,
+        name: "مک بوک پرو",
+        price: 1500,
+        category: CATEGORY_LAPTOP_ID
+    },
+    {
+        id: 2,
+        name: "مک بوک پرو دو",
+        price: 800,
+        category: CATEGORY_LAPTOP_ID
+    },
+    {
+        id: 3,
+        name: "مک بوک ایر",
+        price: 2000,
+        category: CATEGORY_LAPTOP_ID
+    },
+    {
+        id: 4,
+        name: "موبایل ایفون شش",
+        price: 900,
+        category: CATEGORY_MOBILE_ID
+    },
+    {
+        id: 5,
+        name: "موبایل ایفون پونزده پرو",
+        price: 2500,
+        category: CATEGORY_MOBILE_ID
+    },
+    {
+        id: 6,
+        name: "موبایل شیائومی",
+        price: 1000,
+        category: CATEGORY_MOBILE_ID
+    },
+    {
+        id: 7,
+        name: "لپ تاپ ایسوس",
+        price: 3000,
+        category: CATEGORY_LAPTOP_ID
+    },
+    {
+        id: 8,
+        name: "لپ تاپ خیلی گرون",
+        price: 3000,
+        category: CATEGORY_LAPTOP_ID
+    },
+    {
+        id: 9,
+        name: "موبایل سامسونگ",
+        price: 3000,
+        category: CATEGORY_MOBILE_ID
+    },
+    {
+        id: 10,
+        name: "دوربین کانون",
+        price: 1200,
+        category: CATEGORY_CAMERA_ID
+    },
+    {
+        id: 11,
+        name: "دوربین فوجی",
+        price: 1300,
+        category: CATEGORY_CAMERA_ID
+    }
+]
+
+export {
+    CATEGORIES,
+    CATEGORY_CAMERA_ID,
+    CATEGORY_CAMERA_LABEL,
+    CATEGORY_FOOD_ID,
+    CATEGORY_FOOD_LABEL, CATEGORY_LAPTOP_ID, CATEGORY_LAPTOP_LABEL, CATEGORY_MOBILE_ID, CATEGORY_MOBILE_LABEL
+}
+
+export default CATEGORIES;

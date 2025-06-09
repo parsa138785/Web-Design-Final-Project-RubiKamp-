@@ -1,0 +1,35 @@
+.footer {
+  padding: 2.5rem 1rem;
+  text-align: center;
+  margin-top: auto;
+}
+
+.footer.light {
+  background-color: #f8f9fa;
+  color: #212529;
+  border-top: 1px solid #dee2e6;
+}
+
+.footer.dark {
+  background-color: #343a40;
+  color: #f8f9fa;
+  border-top: 1px solid #495057;
+}
+
+.text {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.emailLink {
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.emailLink.light {
+  color: #007bff;
+}
+
+.emailLink.dark {
+  color: #17a2b8;
+}

@@ -1,0 +1,63 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.header.light {
+  background-color: #ffffff;
+  border-bottom: 1px solid #dee2e6;
+  color: #212529;
+}
+
+.header.dark {
+  background-color: #212529;
+  border-bottom: 1px solid #343a40;
+  color: #f8f9fa;
+}
+
+.logoLink {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logoImage {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.navLink {
+  margin-left: 20px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.navLink.light {
+  color: #495057;
+}
+
+.navLink.dark {
+  color: #adb5bd;
+}
+
+.themeButton {
+  padding: 0.5rem 1rem;
+  margin-left: 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  color: white;
+}
+
+.themeButton.light {
+  background-color: #007bff;
+}
+
+.themeButton.dark {
+  background-color: #17a2b8;
+}

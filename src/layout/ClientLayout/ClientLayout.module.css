@@ -1,0 +1,24 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main {
+  flex: 1;
+  padding: 1rem;
+}
+
+.light {
+  background-color: #fff;
+  color: #212529;
+}
+
+.dark {
+  background-color: #121212;
+  color: #f8f9fa;
+}
+
+.breadcrumbs {
+  margin: 1rem 1.5rem;
+}

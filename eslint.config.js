@@ -17,7 +17,11 @@ export default [
         sourceType: 'module',
       },
     },
-    settings: { react: { version: '18.3' } },
+    settings: { 
+      react: { 
+        version: '18.3',
+      },
+    },
     plugins: {
       react,
       'react-hooks': reactHooks,
@@ -28,12 +32,19 @@ export default [
       ...react.configs.recommended.rules,
       ...react.configs['jsx-runtime'].rules,
       ...reactHooks.configs.recommended.rules,
-      'react/jsx-no-target-blank': 'off',
-      'react-refresh/only-export-components': [
-        'warn',
-        { allowConstantExport: true },
-      ],
-      'react/prop-types': 'off', // Disable prop validation
+      'react/jsx-no-target-blank': 'error',
+      'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
+      'react/prop-types': 'error',
+      'no-console': ['warn', { allow: ['warn', 'error'] }],
+      'react-hooks/rules-of-hooks': 'error',
+      'react-hooks/exhaustive-deps': 'warn',
+      'no-unused-vars': 'warn',
+      'prefer-const': 'error',
+      'no-duplicate-imports': 'error',
+      'object-curly-spacing': ['error', 'always'],
+      'semi': ['error', 'always'],
+      'quotes': ['error', 'single'],
+      'eqeqeq': 'error',
     },
   },
 ]

@@ -1,0 +1,26 @@
+.appContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.light {
+  background-color: #fff;
+  color: #212529;
+}
+
+.dark {
+  background-color: #121212;
+  color: #f8f9fa;
+}
+
+.errorMessage {
+  padding: 2rem;
+  text-align: center;
+  font-size: 1.25rem;
+  color: #721c24;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  border-radius: 0.25rem;
+  margin: 1rem;
+}

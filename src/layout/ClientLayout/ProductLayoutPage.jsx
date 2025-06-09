@@ -1,14 +1,22 @@
-import Breadcrumbs from "../../components/Breadcrumbs"
+import PropTypes from 'prop-types';
+import ClientLayout from './ClientLayout';
 
-const ProductLayoutPage = ({breadcrumbItems, children}) => {
+const ProductLayoutPage = ({ breadcrumbItems, children }) => {
     return (
-        <div>
-            <Breadcrumbs items={breadcrumbItems} />
-            <div style={{margin: "1rem 1.5rem"}}>
-                {children}
-            </div>
-        </div>
-    )
-}
+        <ClientLayout breadcrumbItems={breadcrumbItems}>
+            {children}
+        </ClientLayout>
+    );
+};
 
-export default ProductLayoutPage
+ProductLayoutPage.propTypes = {
+    breadcrumbItems: PropTypes.arrayOf(
+        PropTypes.shape({
+            label: PropTypes.string.isRequired,
+            link: PropTypes.string
+        })
+    ),
+    children: PropTypes.node.isRequired
+};
+
+export default ProductLayoutPage;
